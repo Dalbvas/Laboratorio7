@@ -1,16 +1,21 @@
+<!--Iniciamos nuestro documento HTML-->
 <!DOCTYPE html>
 <html>
 <head>
+    <!--Creamos nuestro encabezado y vinculamos nuestro archivo CSS-->
     <meta charset="UTF-8">
     <tittle>Calculadora con JavaScript</tittle>
     <link type="text/css" href="css/estilo.css" rel="stylesheet">
 </head>
 <body onload="init();">
+    <!--Creamos una tabla para poder darle forma de calculadora
+    con una imagen de fondo para darle un toque especial a la calculadora-->
     <table class="calculadora" background="img/fondo.jpg">
         <tr>
             <td colspan="4"><span id="resultado"></span></td>
         </tr>
         <tr>
+            <!--Creamos todos los botones correspondientes para los numeros-->
             <td><button id="siete">7</button></td>
             <td><button id="ocho">8</button></td>
             <td><button id="nueve">9</button></td>
@@ -35,6 +40,8 @@
             <td><button id="suma">+</button></td>
         </tr>    
     </table>
+    <!--Vinculamos nuestro archivo javascript quien tiene las funciones necesarias
+    para que funcione nuestra calculadora-->
     <script  src="js/script.js"></script>
 </body>
 </html>
