@@ -1,3 +1,4 @@
+//Declaramos las variables que vamos a utilizar en nuestras funciones
 var operandoa;
 var operandob;
 var operacion;
@@ -22,7 +23,7 @@ function init(){
   var nueve = document.getElementById('nueve');
   var cero = document.getElementById('cero');
 }
-
+//Colocamos lo que se realiza al momento de presionar cada uno de los botones
  uno.onclick = function(e){
       resultado.textContent = resultado.textContent  + "1";
   }
@@ -53,9 +54,11 @@ function init(){
   cero.onclick = function(e){
       resultado.textContent = resultado.textContent  + "0";
   }
+
   reset.onclick = function(e){
       resetear();
   }
+  //las operaciones que se llevaran a cabo 
   suma.onclick = function(e){
       operandoa = resultado.textContent;
       operacion = "+";
@@ -91,6 +94,8 @@ function resetear(){
   operacion = "";
 }
 
+/*La funcion resolver que nos permite saber que
+operacion quiere realizar el usuario*/ 
 function resolver(){
   var res = 0;
   switch(operacion){
